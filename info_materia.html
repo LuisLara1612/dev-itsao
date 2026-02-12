@@ -43,38 +43,34 @@
             border-bottom: 1px solid #334155;
         }
 
-        h2 {
-            color: #facc15;
-        }
+        h2 { color: #facc15; }
+        h3 { color: #38bdf8; }
 
-        h3 {
-            color: #38bdf8;
-        }
-
-        /* BOTÓN REGRESAR */
+        /* 🔵 BOTÓN REGRESAR FIJO */
         .btn-regresar {
-            display: block;
-            width: fit-content;
-            margin: 30px auto;
-            padding: 12px 25px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 12px 20px;
             background-color: #38bdf8;
             color: #0f172a;
             text-decoration: none;
             border-radius: 8px;
             font-weight: bold;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
             transition: 0.3s;
+            z-index: 1000;
         }
 
         .btn-regresar:hover {
             background-color: #0ea5e9;
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
     </style>
 </head>
 
 <body>
 
-    <!-- MENÚ -->
     <nav>
         <h2>Temario – Desarrollo Full Stack</h2>
         <ul>
@@ -85,7 +81,6 @@
         </ul>
     </nav>
 
-    <!-- TEMA 1 -->
     <section id="tema1">
         <h2>1. Fundamentos del Desarrollo Full Stack</h2>
         <h3>1.1 Rol y diferencias del Front-End, Back-End y Full Stack</h3>
@@ -93,46 +88,26 @@
         <h3>1.3 Navegadores, servidores web, hosting y dominios</h3>
         <h3>1.4 Herramientas clave: Node.js, NPM, Git, Visual Studio Code</h3>
         <h3>1.4.1 Control de versiones con Git y GitHub</h3>
-        <h3>1.4.2 Integración y despliegue continuo (CI/CD) con GitHub Actions</h3>
+        <h3>1.4.2 CI/CD con GitHub Actions</h3>
     </section>
 
-    <!-- TEMA 2 -->
     <section id="tema2">
         <h2>2. Interfaces Web Modernas y Accesibles</h2>
-        <h3>2.1 HTML5 y estructura semántica</h3>
-        <h3>2.2 CSS3, modelo de caja, media queries</h3>
-        <h3>2.3 Bootstrap / Tailwind CSS</h3>
-        <h3>2.4 Principios de accesibilidad (WCAG)</h3>
-        <h3>2.5 Diseño adaptativo y responsive</h3>
+        <h3>HTML5, CSS3, Bootstrap/Tailwind, Accesibilidad y Responsive</h3>
     </section>
 
-    <!-- TEMA 3 -->
     <section id="tema3">
-        <h2>3. Patrones de Diseño para la Arquitectura del Back-End</h2>
-        <h3>3.1 Patrones Creacionales</h3>
-        <p>Singleton — Factory Method</p>
-
-        <h3>3.2 Patrones Estructurales</h3>
-        <p>Adapter — Decorator — Composite</p>
-
-        <h3>3.3 Patrones de Comportamiento</h3>
-        <p>Observer — State</p>
+        <h2>3. Patrones de Diseño Back-End</h2>
+        <h3>Creacionales, Estructurales y de Comportamiento</h3>
     </section>
 
-    <!-- TEMA 4 -->
     <section id="tema4">
         <h2>4. Desarrollo Front-End con Frameworks</h2>
-        <h3>4.1 Introducción a Angular</h3>
-        <h3>4.2 Angular CLI: componentes, templates, módulos y servicios</h3>
-        <h3>4.2.1 JSON y métodos HTTP</h3>
-        <h3>4.2.2 Consumo de servicios con async/await</h3>
-        <h3>4.2.3 Firebase y Backend-as-a-Service</h3>
-        <h3>4.3 Formularios reactivos y validaciones</h3>
-        <h3>4.4 Ruteo y navegación entre vistas</h3>
+        <h3>Angular, Servicios, Firebase, Formularios y Ruteo</h3>
     </section>
 
-    <!-- BOTÓN REGRESAR -->
-    <a href="index.html" class="btn-regresar">⬅ Regresar al Inicio</a>
+    <!-- 🔙 BOTÓN -->
+    <a href="index.html" class="btn-regresar">⬅ Inicio</a>
 
 </body>
 </html>
